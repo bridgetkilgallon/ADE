@@ -39,7 +39,7 @@ angular.module('ADE').directive('adeIcon', ['ADE', '$compile', '$filter', functi
 	var iconsPopupTemplate = '';
 	var s = 0;
 
-	if (len > 0) iconsPopupTemplate = '<a class="ade-clear">clear</a>';
+	if (len > 0) iconsPopupTemplate = '<a class="ade-clear minico x-fail remove">Remove Icon</a>';
 	for (var i = 0; i < len; i++) {
 		iconsPopupTemplate += '<span class="ade-icon icon-' + ADE.icons[i] + '"></span>';
 	}
@@ -74,7 +74,7 @@ angular.module('ADE').directive('adeIcon', ['ADE', '$compile', '$filter', functi
 				var html = "";
 
 				if(nopop) {
-					html = '<div class="ade-icons ade-nopop"><h4>Select an Icon</h4>' + iconsPopupTemplate + '</div>';
+					html = '<div class="ade-icons ade-nopop"><h2>Select an Icon</h2>' + iconsPopupTemplate + '</div>';
 					element.html(html);
 					setupEvents();
 				} else {
@@ -150,7 +150,7 @@ angular.module('ADE').directive('adeIcon', ['ADE', '$compile', '$filter', functi
 
 				if ((isMySpan || isMyDiv)  && (!iconPopup || !iconPopup.length)) {   //don't popup a second one
 					editing = true;
-					$compile('<div class="' + ADE.popupClass + ' ade-icons dropdown-menu open"><h4>Select an Icon</h4>' + iconsPopupTemplate + '<div class="ade-hidden"><input id="invisicon" type="text" /></div></div>')(scope).insertAfter(element);
+					$compile('<div class="' + ADE.popupClass + ' ade-icons dropdown-menu open"><h2>Select an Icon</h2>' + iconsPopupTemplate + '<div class="ade-hidden"><input id="invisicon" type="text" /></div></div>')(scope).insertAfter(element);
 					place();
 
 					setupEvents();

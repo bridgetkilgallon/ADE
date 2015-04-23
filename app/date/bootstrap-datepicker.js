@@ -586,9 +586,9 @@
 		//templates for making the calendar HTML
 		headTemplate: '<thead>' +
 							'<tr>' +
-								'<th class="prev">&lsaquo;</th>' +
+								'<th class="prev"><span class="minico arw-l"></span></th>' +
 								'<th colspan="5" class="switch"></th>' +
-								'<th class="next">&rsaquo;</th>' +
+								'<th class="next"><span class="minico arw"></span></th>' +
 							'</tr>' +
 						'</thead>',
 		contTemplate: '<tbody><tr><td colspan="7"></td></tr></tbody>'

@@ -3,24 +3,23 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
+	<head> 
 		<meta charset="utf-8"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 		<title>AngularJS Datatype Editors (ADE)</title>
 		<meta name="description" content=""/>
-		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-		<link rel="stylesheet" href="bower_components/bootstrap/docs/assets/css/bootstrap.css"/>  
-		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css"/>
-		<link rel="stylesheet" href="common/demo.css"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/> 
+		<link rel="stylesheet" href="../../libs/css/global.css"/>
+		<link rel="stylesheet" href="../../libs/css/icon-font.css"/>
+				<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css"/>
 
 		<!-- build:css build/ade.min.css -->
 		<link rel="stylesheet" href="date/datepicker.css"/>
 		<link rel="stylesheet" href="time/timepicker.css"/>
 		<link rel="stylesheet" href="common/ng-tags-input/ng-tags-input.css"/>
-		<link rel="stylesheet" href="common/ng-tags-input/ng-tags-input.bootstrap.css"/>
 		<link rel="stylesheet" href="common/ade.css"/>
 		<!-- endbuild -->
-
+		<link rel="stylesheet" href="../../libs/css/ade.css"/>
 		<script src="bower_components/jquery/dist/jquery.js"></script>
 		<script src="bower_components/angular/angular.js"></script>
 		<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
@@ -69,125 +68,125 @@
 
 	</head>
 	<body ng-app="tagapp" ng-init="datatext='click to edit me';datalongtext='click to edit this very very very long text'; datatime=1000;dataicon='glass';dataurl='http://www.github.com';datatoggle=true;datadate=1357601471;dataemail='example@example.com';dataphone='111-555-1234';datarate=4;datapercent=50;datalen=90;datacurrency=4.50;datadec=1.2;dataflex=1.2;dataint=9;datasingle='apple';datamulti=['dog','cat']" >
-		<a href="https://github.com/Toodledo/ADE"><img class="github" src="forkme_right_red.png" alt="Fork me on GitHub"></a>
 
-		<div class="container" ng-controller="ctrl">
-		<h1>AngularJS Datatype Editors (ADE)</h1>
-		<p>ADE is a bunch of directives and filters for displaying and editing various types of data, using <a href="http://angularjs.org/">AngularJS</a>. The typical way that we have seen this done is to have hidden input boxes that toggle to visible when clicked.  The important difference with ADE is that the input box is created and destroyed only when needed, so the DOM is not filled with unused elements. This can be a benefit when you have lots of editable things on the page.</p>
 
-		<p>ADE requires jquery, bootstrap, and angular.  You can find us on <a href="https://github.com/Toodledo/ADE">GitHub</a>.</p>
+		<div id="demo" class="container" ng-controller="ctrl">
+		<h1>Toodledo UI Elements</h1>
+		<p class="unfinished dim"> Items that have a red asterisk are unfinished and still require further effort towards styling or functionality.</p>
+		<div class="internal-box gray glow">
+			<h1>Short Text Editor</h1>
+			<p>Edit text in-line. There is no max length, but it is indented for short strings. Classes to control the size of the input box are .input-large, .input-medium, and input-small. </p>
+			<div class="input-examples">
+				<span>
+					<label>.input-large</label><div id='text' class="input-large" ade-text ade-class="input-large" ng-model="datatext"></div>
+				</span>
+				<span>
+					<label>.input-medium</label><div id='text' class="input-medium" ade-text ade-class="input-medium" ng-model="datatext"></div>
+				</span>
+				<span>
+					<label>.input-small</label><div id='text' class="input-small" ade-text ade-class="input-small" ng-model="datatext"></div>
+				</span>
+			</div>
+		</div>
+		<div class="internal-box gray glow">
+			<h1>Long Text Editor</h1>
+			<p>A popup text area for editing large amounts of richly formatted text.</p>
+				<div class="input-examples">
+					<span>
+						<label>.input-xlarge</label> <div class="sample" ade-rich ade-class="input-xlarge" ade-max="2000" ade-cut="25" ng-model="datalongtext"></div>	
+					</span>
+				</div>
+		</div>
+		<div class="internal-box gray glow">
+			<h1>Text Editors (with options) </h1>
+			<p>A filter to make links clickable, and a way to edit them in place. Use classes .input-url, .input-email and input-phone in addition to the input size classes.</p>
+			<div class="input-examples">
+				<span>
+					<label>.minico.lnk</label> <div class="input-small input-options" ade-url='url' ade-class="input-medium" ng-model="dataurl"></div>
+				</span>
+				<span>
+					<label>.minico.mail</label> <div class="input-medium input-options" ade-url='email' ade-class="input-medium" ng-model="dataemail"></div>
+				</span>
+				<span>
+					<label>.input-phone</label> <div class="input-large input-options" ade-url='phone' ade-class="input-medium" ng-model="dataphone"></div>
+				</span>
+			</div>
+		</div>
 
-		<p>Install using bower:</p>
-
-		<pre>bower install ADE</pre>
-
-		<p>Or <a href="https://github.com/Toodledo/ADE/archive/master.zip">Download ZIP</a>.</p>
-
-		<h2>Text</h2><br />
-
-		<a href="text/">Text (Short)</a> - Edit text in-line. There is no max length, but it is indented for short strings.<br />
-			Example: <div id='text' class="sample" ade-text ade-class="input-large" ng-model="datatext"></div>
-			<br /><br />
-
-		<a href="rich/">Text (Long)</a> - A popup text area for editing large amounts of richly formatted text.<br />
-			Example: <div class="sample" ade-rich ade-class="input-xlarge" ade-max="2000" ade-cut="25" ng-model="datalongtext"></div>
-			<br /><br />
-
-		<a href="url/">URL</a> - A filter to make links clickable, and a way to edit them in place.<br />
-			Example:  <div class="sample" ade-url='url' ade-class="input-medium" ng-model="dataurl"></div>
-			<br /><br />
-
-		<a href="email/">Email Address</a> - A filter to make email address clickable to email, and a way to edit them in place.<br />
-			Example: <div class="sample" ade-url='email' ade-class="input-medium" ng-model="dataemail"></div>
-			<br /><br />
-
-		<a href="phone/">Phone Number</a> - A filter to make a phone number clickable to call (on support devices) and a way to edit them in place.<br />
-			Example: <div class="sample" ade-url='phone' ade-class="input-medium" ng-model="dataphone"></div>
-			<br /><br />
-		
-
-		<br /><h2>Dates</h2><br />
-		
-		<a href="date/">Date</a> - Formats a unix timestamp as a date (Jan 1, 2013) and provides a popup calendar for editing.<br />
-			Example: <div class="sample" ade-date="MMM d, yyyy" ade-class="input-medium" ng-model="datadate"></div>
-			<br /><br />
-		
-		<a href="date/">Date + Time</a> - Formats a unix timestamp as a date + time (Jan 1, 2013 11:45 am)  and provides a popup calendar for editing.<br />
-			Example: <div class="sample" ade-date="MMM d, yyyy h:mm:ss a" ade-class="input-large" ng-model="datadate"></div>
-			<br /><br />
-		
-		<a href="date/">Year</a> - Formats a unix timestamp as a year  (2013) and provides a popup calendar for editing.<br />
-			Example: <div class="sample" ade-date="yyyy" ade-class="input-small" ng-model="datadate"></div>
-			<br /><br />
-		
-		<a href="time/">Time</a> - Formats an integer as a time of the day and provides a popup widget for edting the time.<br />
-			Example: <div class="sample" ade-time ng-model="datatime"></div>
-			<br /><br />
-		
-		<br /><h2>Numeric</h2><br />
-
-		<a href="money/">Money</a> - Formats a decimal as currency, rounded to 2 decimal places witha $ in front.<br />
-			Example: <div class="sample" ade-number='money' ng-model="datacurrency"></div>
-			<br /><br />
-
-		<a href="decimal/">Decimal</a> - Formats a decimal with a certain precision.<br />
-			Example: <div class="sample" ade-number='decimal' ng-model="datadec"></div>
-			<br /><br />
-
-		<a href="integer/">Integer</a> - Formats an integer.<br />
-			Example: <div class="sample" ade-number='integer' ng-model="dataint"></div>
-			<br /><br />
-
-		<a href="number/">Number</a> - Formats an integer or a decimal depending on input.<br />
-			Example: <div class="sample" ade-number='flex' ng-model="dataflex"></div>
-			<br /><br />
-
-		<a href="percent/">Percent</a> - Formats a decimal as a percentage with an appended percent sign.<br />
-			Example: <div class="sample" ade-number='percent' ng-model="datapercent"></div>
-			<br /><br />
-
-		<a href="duration/">Duration</a> - Formats a number as a time duration (4hrs 24mins). <br />
-			Example: <div class="sample" ade-duration ade-class="input-medium" ng-model="datalen"></div>
-			<br /><br />
-		
-		<br /><h2>Other</h2><br />
-	
-		<div ng-controller="TagCtrl">
-		<a href="list/">List</a> - Presents a popup list to choose one value from.<br />
-			Example:  <div class="sample" ade-list='list1' ade-query="query(val,listId)" ng-model="datasingle"></div>
-			<br /><br />
-
-		<a href="tag/">Tags</a> - Presents a popup list to choose multiple values from. <br />
-			Example: <div class="sample" ade-tag="list2" ade-query="query(val,listId)" ng-model="datamulti"></div>
-			<br /><br />
+		<div class="internal-box gray glow">
+			<h1>Date Picker</h1>
+			<p>A filter to make links clickable, and a way to edit them in place. Use classes .input-url, .input-email and input-phone in addition to the input size classes.</p>			
+			<div class="input-examples">
+				<span>
+					<label>Date</label> <div class="input-medium" ade-date="MMM d, yyyy" ade-class="input-medium" ng-model="datadate"></div>
+				</span>
+				<span>
+					<label>Date & Time</label> <div class="input-medium" ade-date="MMM d, yyyy h:mm:ss a" ade-class="input-medium" ng-model="datadate"></div>
+				</span>
+				<span>
+					<label>Year</label><div class="input-medium" ade-date="yyyy" ade-class="input-medium" ng-model="datadate"></div>
+				</span>
+				<span>
+					<label>Time</label><div class="input-medium" ade-class="input-medium" ade-time ng-model="datatime"></div>
+				</span>
+			</div>
 		</div>
 		
-		<a href="rating/">Rating</a> - Presents an integer as a specificed number of stars so you can rate things.<br />
-			Example: <div style="display:inline-block;" ade-rating ade-num="10" ade-class="icon-heart" ade-width="16" ng-model="datarate"></div>
-			<br /><br />
-		
-		<a href="toggle/">Toggle Icon (Star/Checkbox)</a> - A boolean that is represented as an image that can be toggled between two states.<br />
-			Example: <div style="display:inline-block;" ade-toggle ng-model="datatoggle"></div> <div style="display:inline-block;" ade-toggle ade-class="icon-check" ng-model="datatoggle2"></div>
-			<br /><br />
-
-		<a href="multi/">Multi-state Icon</a> - Toggle an icon between N states.<br />
-			Example: <div style="display:inline-block;" ade-multi ng-model="datamulticon"></div>
-			<br /><br />
-		
-		<a href="icon/">Icon</a> - An icon that can be switched between a number of different options with a popup editor.<br />
-			Example: <a ade-icon ng-model="dataicon"></a>
-			<br /><br />
-
-		<br /><h2>Future Ideas</h2><br />
-		Location - Displays a location with a popup map for editing. <br />
-			<br /><br />
-		QR Barcode - Displays a QR code with ability to edit encoded values.<br />
-			<br /><br />
-		Stock Price - Displays a stock with price. Price updates automatically.<br />
-			<br /><br />
-		
+		<div class="internal-box gray glow">
+			<h1>Numerical Pickers</h1>
+			<p>Elements and pickers for numerical data</p>			
+			<div class="input-examples">
+				<span>
+					<label>Currency</label> <div class="input-medium" ade-number='money' ng-model="datacurrency"></div>
+				</span>
+				<span>
+					<label>Decimal</label> <div class="input-medium" ade-number='decimal' ng-model="datadec"></div>
+				</span>
+				<span>
+					<label>Integer</label> <div class="input-medium" ade-number='integer' ng-model="dataint"></div>
+				</span>
+				<span>
+					<label>Number</label> <div class="input-medium" ade-number='flex' ng-model="dataflex"></div>
+				</span>
+				<span>
+					<label>Percent</label> <div class="input-medium" ade-number='percent' ng-model="datapercent"></div>
+				</span>
+				<span>
+					<label>Duration</label> <div class="input-medium" ade-duration ade-class="input-medium" ng-model="datalen"></div>
+			</div>
 		</div>
-		<br /><br /><br /><br /><br /><br />
-		<br /><br /><br /><br /><br /><br />
+		
+		<div class="internal-box gray glow">
+			<h1>Tag Picker</h1>
+			<p class="unfinished dim">Tag suggestion list isn't showing up. Also, we need to be careful where we put this. If the tag picker is a child of a li or span it will get inherit unwanted styles.</p>			
+				<div class="input-tags input-medium" ade-tag="list2" ade-query="query(val,listId)" ng-model="datamulti"></div>
+		</div>
+
+		<div class="internal-box gray glow">
+			<h1>List Picker</h1>
+			<p class="unfinished dim">List of options isn't showing up.</p>	
+			<div class="input-list" ade-list='list1' ade-query="query(val,listId)" ng-model="datasingle"></div>
+		</div>
+
+		<div class="internal-box gray glow">
+			<h1>Star Rating</h1>
+			<p class="unfinished dim">Still needs hover color</p>	
+			<div style="display:inline-block;" ade-rating ade-num="10" ade-class="icon-star" ade-width="16" ng-model="datarate"></div>
+		</div>
+
+		<div class="internal-box gray glow">
+			<h1>Icon Toggle</h1>
+			<p class="unfinished dim">How do I differentiate checkbox from star?</p>	
+			<div class="input-examples">
+				<span>
+					<label>.input-star</label> <div style="display:inline-block;" ade-toggle ng-model="datatoggle"></div>
+				</span>
+			</div>
+		</div>
+		<div class="internal-box gray glow">
+			<h1>Icon Picker</h1>
+			<p>An icon that can be switched between a number of different options with a popup editor.</p>
+			<a ade-icon ng-model="dataicon" class="current-icon"></a>
+		</div>
 	</body>
 </html>

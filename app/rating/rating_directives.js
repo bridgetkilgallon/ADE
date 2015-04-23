@@ -38,7 +38,7 @@ angular.module('ADE').directive('adeRating', ['ADE', '$compile', '$filter', func
 		scope: {
 			adeId: "@",
 			adeNum: "@",
-			adeArrows: "@",
+			adeArrows: "@", 
 			adeClass: "@",
 			adeWidth: "@",
 			adeReadonly: "@",
@@ -80,7 +80,7 @@ angular.module('ADE').directive('adeRating', ['ADE', '$compile', '$filter', func
 					if (i === 0) {
 						html += '<a class="ade-rate-one ade-zero" data-position="'+(i)+'">&nbsp;</a>';
 					} else {
-						html += '<a class="ade-rate-one '+starClass+starStatusClass+' ade-rate'+starStatusClass+'" data-position="'+(i)+'"></a>';
+						html += '<a class="minico ade-rate-one '+starClass+starStatusClass+' ade-rate'+starStatusClass+'" data-position="'+(i)+'"></a>';
 					}
 				}
 

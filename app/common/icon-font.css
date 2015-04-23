@@ -1,0 +1,690 @@
+/* Icon Fonts */
+@font-face {
+  font-family: 'Minicons';
+  src: url("../fonts/minicons/minicons.eot?v=3.0.1");
+  src: url("../fonts/minicons/minicons.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("/libs/fonts/minicons/minicons.woff?v=3.0.1") format("woff"), url("/libs/fonts/minicons/minicons.ttf?v=3.0.1") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.minico.acct:before {
+  content: "";
+}
+
+.minico.actn-lin:before {
+  content: "";
+}
+
+.minico.actn-sol:before {
+  content: "";
+}
+
+.minico.add:before {
+  content: "";
+}
+
+.minico.alph:before {
+  content: "";
+}
+
+.minico.arw:before {
+  content: "";
+}
+
+.minico.arw-dwn:before {
+  content: "";
+}
+
+.minico.arw-l:before {
+  content: "";
+}
+
+.minico.arw-up:before {
+  content: "";
+}
+
+.minico.atc:before {
+  content: "";
+}
+
+.minico.brwsr:before {
+  content: "";
+}
+
+.minico.bug:before {
+  content: "";
+}
+
+.minico.cal:before {
+  content: "";
+}
+
+.minico.chain:before {
+  content: "";
+}
+
+.minico.clon:before {
+  content: "";
+}
+
+.minico.contx:before {
+  content: "";
+}
+
+.minico.crc:before {
+  content: "";
+}
+
+.minico.crshr:before {
+  content: "";
+}
+
+.minico.ddate:before {
+  content: "";
+}
+
+.minico.droid:before {
+  content: "";
+}
+
+.minico.dsktop:before {
+  content: "";
+}
+
+.minico.dtim:before {
+  content: "";
+}
+
+.minico.dwnld:before {
+  content: "";
+}
+
+.minico.edit:before {
+  content: "";
+}
+
+.minico.empty:before {
+  content: "";
+}
+
+.minico.etc:before {
+  content: "";
+}
+
+.minico.exc-lin:before {
+  content: "";
+}
+
+.minico.exc-sol:before {
+  content: "";
+}
+
+.minico.file:before {
+  content: "";
+}
+
+.minico.fol:before {
+  content: "";
+}
+
+.minico.frm-add:before {
+  content: "";
+}
+
+.minico.frm-dwn:before {
+  content: "";
+}
+
+.minico.frm-exc:before {
+  content: "";
+}
+
+.minico.frm-fol:before {
+  content: "";
+}
+
+.minico.frm-lock:before {
+  content: "";
+}
+
+.minico.frm-sccs:before {
+  content: "";
+}
+
+.minico.frm-scrty:before {
+  content: "";
+}
+
+.minico.frm-top:before {
+  content: "";
+}
+
+.minico.frm-up:before {
+  content: "";
+}
+
+.minico.ft-ai:before {
+  content: "";
+}
+
+.minico.ft-css:before {
+  content: "";
+}
+
+.minico.ft-doc:before {
+  content: "";
+}
+
+.minico.ft-eps:before {
+  content: "";
+}
+
+.minico.ft-html:before {
+  content: "";
+}
+
+.minico.ft-indd:before {
+  content: "";
+}
+
+.minico.ft-jpg:before {
+  content: "";
+}
+
+.minico.ft-js:before {
+  content: "";
+}
+
+.minico.ft-mp3:before {
+  content: "";
+}
+
+.minico.ft-mp4:before {
+  content: "";
+}
+
+.minico.ft-pdf:before {
+  content: "";
+}
+
+.minico.ft-ppt:before {
+  content: "";
+}
+
+.minico.ft-psd:before {
+  content: "";
+}
+
+.minico.ft-txt:before {
+  content: "";
+}
+
+.minico.ft-xls:before {
+  content: "";
+}
+
+.minico.ft-zip:before {
+  content: "";
+}
+
+.minico.goal:before {
+  content: "";
+}
+
+.minico.hab:before {
+  content: "";
+}
+
+.minico.hab-dwn:before {
+  content: "";
+}
+
+.minico.hab-up:before {
+  content: "";
+}
+
+.minico.hide:before {
+  content: "";
+}
+
+.minico.hot:before {
+  content: "";
+}
+
+.minico.idea:before {
+  content: "";
+}
+
+.minico.ios:before {
+  content: "";
+}
+
+.minico.iphon:before {
+  content: "";
+}
+
+.minico.key:before {
+  content: "";
+}
+
+.minico.len:before {
+  content: "";
+}
+
+.minico.lnk:before {
+  content: "";
+}
+
+.minico.loc:before {
+  content: "";
+}
+
+.minico.lsts:before {
+  content: "";
+}
+
+.minico.mail:before {
+  content: "";
+}
+
+.minico.menu:before {
+  content: "";
+}
+
+.minico.mov:before {
+  content: "";
+}
+
+.minico.note:before {
+  content: "";
+}
+
+.minico.ntbook:before {
+  content: "";
+}
+
+.minico.outln:before {
+  content: "";
+}
+
+.minico.play-lin:before {
+  content: "";
+}
+
+.minico.play-sol:before {
+  content: "";
+}
+
+.minico.print:before {
+  content: "";
+}
+
+.minico.prio:before {
+  content: "";
+}
+
+.minico.priv:before {
+  content: "";
+}
+
+.minico.ques-lin:before {
+  content: "";
+}
+
+.minico.ques-sol:before {
+  content: "";
+}
+
+.minico.quo:before {
+  content: "";
+}
+
+.minico.rep:before {
+  content: "";
+}
+
+.minico.rmnd:before {
+  content: "";
+}
+
+.minico.sccs:before {
+  content: "";
+}
+
+.minico.scrty:before {
+  content: "";
+}
+
+.minico.set:before {
+  content: "";
+}
+
+.minico.shar:before {
+  content: "";
+}
+
+.minico.sms:before {
+  content: "";
+}
+
+.minico.srch:before {
+  content: "";
+}
+
+.minico.star:before {
+  content: "";
+}
+
+.minico.star-hf:before {
+  content: "";
+}
+
+.minico.stat:before {
+  content: "";
+}
+
+.minico.subscrb:before {
+  content: "";
+}
+
+.minico.subt:before {
+  content: "";
+}
+
+.minico.sync:before {
+  content: "";
+}
+
+.minico.tag:before {
+  content: "";
+}
+
+.minico.task:before {
+  content: "";
+}
+
+.minico.tim:before {
+  content: "";
+}
+
+.minico.trsh:before {
+  content: "";
+}
+
+.minico.twtr:before {
+  content: "";
+}
+
+.minico.upld:before {
+  content: "";
+}
+
+.minico.view:before {
+  content: "";
+}
+
+.minico.wbhk:before {
+  content: "";
+}
+
+.minico.x:before {
+  content: "";
+}
+
+.minico.x-fail:before {
+  content: "";
+}
+
+.minico:before {
+  font-family: "Minicons";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: 0.2 0.2s ease-in-out;
+  -webkit-transition: 0.2 0.2s ease-in-out;
+  -moz-transition: 0.2 0.2s ease-in-out;
+  -o-transition: 0.2 0.2s ease-in-out;
+  font-style: normal;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/*--------------------------------- File Extension Aliases --------*/
+.minico.file.ft-zip:before,
+.minico.file.ft-7z:before,
+.minico.file.ft-7z:before,
+.minico.file.ft-cbr:before,
+.minico.file.ft-deb:before,
+.minico.file.ft-gz:before,
+.minico.file.ft-pkg:before,
+.minico.file.ft-rar:before,
+.minico.file.ft-rpm:before,
+.minico.file.ft-sitx:before,
+.minico.file.ft-zipx:before {
+  /*compressed file extensions*/
+  content: "";
+  color: #747369;
+}
+
+.minico.file.ft-txt:before,
+.minico.file.ft-log:before,
+.minico.file.ft-msg:before,
+.minico.file.ft-rtf:before,
+.minico.file.ft-tex:before {
+  /*text file extensions*/
+  content: "";
+  color: #747369;
+}
+
+.minico.file.ft-mp3:before,
+.minico.file.ft-aif:before,
+.minico.file.ft-iff:before,
+.minico.file.ft-m3u:before,
+.minico.file.ft-m4a:before,
+.minico.file.ft-mid:before,
+.minico.file.ft-mpa:before,
+.minico.file.ft-ra:before,
+.minico.file.ft-wav:before,
+.minico.file.ft-wma:before {
+  /*audio extensions*/
+  content: "";
+  color: #747369;
+}
+
+.minico.file.ft-mp4:before,
+.minico.file.ft-3g2:before,
+.minico.file.ft-3gp:before,
+.minico.file.ft-asf:before,
+.minico.file.ft-asx:before,
+.minico.file.ft-avi:before,
+.minico.file.ft-flv:before,
+.minico.file.ft-m4v:before,
+.minico.file.ft-mpg:before,
+.minico.file.ft-rm:before,
+.minico.file.ft-srt:before,
+.minico.file.ft-swf:before,
+.minico.file.ft-vob:before,
+.minico.file.ft-wmv:before {
+  /*video extensions*/
+  content: "";
+  color: #747369;
+}
+
+.minico.file.ft-jpg:before,
+.minico.file.ft-bmp:before,
+.minico.file.ft-dds:before,
+.minico.file.ft-gif:before,
+.minico.file.ft-jpg:before,
+.minico.file.ft-png:before,
+.minico.file.ft-pspimage:before,
+.minico.file.ft-tga:before,
+.minico.file.ft-thm:before,
+.minico.file.ft-tif:before,
+.minico.file.ft-tiff:before,
+.minico.file.ft-raw:before,
+.minico.file.ft-jpeg:before {
+  /*raster image extensions*/
+  content: "";
+  color: #00B1FF;
+}
+
+.minico.file.ft-eps:before,
+.minico.file.ft-ps:before,
+.minico.file.ft-svg:before {
+  /*vector image extensions*/
+  content: "";
+  color: #EC772E;
+}
+
+.minico.file.ft-doc:before,
+.minico.file.ft-docx:before,
+.minico.file.ft-odt:before,
+.minico.file.ft-pages:before,
+.minico.file.ft-wpd:before,
+.minico.file.ft-wps:before {
+  /*doc extensions*/
+  content: "";
+  color: #2E60FF;
+}
+
+.minico.file.ft-xls:before,
+.minico.file.ft-xlr:before,
+.minico.file.ft-xlsx:before {
+  /*excel spreadsheet extensions*/
+  content: "";
+  color: #1B7343;
+}
+
+.minico.file.ft-ppt:before,
+.minico.file.ft-pps:before,
+.minico.file.ft-pptx:before,
+.minico.file.ft-key:before {
+  /*powerpoint presentation extensions*/
+  content: "";
+  color: #D24318;
+}
+
+.minico.file.ft-html:before,
+.minico.file.ft-asp:before,
+.minico.file.ft-aspx:before,
+.minico.file.ft-cer:before,
+.minico.file.ft-cfm:before,
+.minico.file.ft-csr:before,
+.minico.file.ft-htm:before,
+.minico.file.ft-jsp:before,
+.minico.file.ft-php:before,
+.minico.file.ft-rss:before,
+.minico.file.ft-xhtml:before,
+.minico.file.ft-c:before,
+.minico.file.ft-class:before,
+.minico.file.ft-cpp:before,
+.minico.file.ft-cs:before,
+.minico.file.ft-dtd:before,
+.minico.file.ft-fla:before,
+.minico.file.ft-h:before,
+.minico.file.ft-java:before,
+.minico.file.ft-lua:before,
+.minico.file.ft-m:before,
+.minico.file.ft-pl:before,
+.minico.file.ft-py:before,
+.minico.file.ft-sh:before,
+.minico.file.ft-sln:before,
+.minico.file.ft-swift:before,
+.minico.file.ft-vcxproj:before,
+.minico.file.ft-xcodeproj:before {
+  /*general programming extensions*/
+  content: "";
+  color: #430099;
+}
+
+.minico.file.ft-pdf:before {
+  color: #E61B1B;
+}
+
+.minico.file:before {
+  color: #747369;
+}
+
+/*--------------------------------- Habits Aliases --------*/
+.minico.check:before,
+.minico.sccs-empty:before {
+  content: "";
+}
+
+.minico.check-empty:before {
+  content: "";
+}
+
+.minico.x-fail-empty:before {
+  content: "";
+}
+
+/*----------------------------------------- END ICON FONTS */
+
+
+a.minico, /*prevent italics and underline*/
+a .minico {
+  font-style: normal;
+  text-decoration: none;
+}
+
+.rating b {
+  font-size: .9em;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.star-rating,
+.ico-stack { 
+  height: .9em;
+  line-height: .9em;
+}
+
+.star-rating {
+  vertical-align: middle;
+  font-size: 1.1em;
+  color: #747369;
+}
+
+.star-rating .starred:before {
+  /* orange for starred stars */
+  color: #E49E26;
+}
+
+.ico-stack {
+  /* to contain stacked icons */
+  width: .9em;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.ico-stack .minico:before {
+  position: absolute;
+  left: 0;
+}
+
+.ico-stack .star-hf.minico:before {
+  z-index: 1000;
+}
+
+.my-rating:hover {
+  cursor: pointer;
+}
+
+.my-rating .minico:hover:before {
+  color: #E49E26;
+}
+
+.my-rating .minico.star:hover:before {
+  z-index: 1001;
+}
+
+/* add space between icon and text to the right*/
+.minico.space:before {
+  margin-right: 4px;
+}
+
+
+
+ 
+
+
